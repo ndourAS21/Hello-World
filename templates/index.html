@@ -83,7 +83,7 @@
         <h1>Hello World !</h1>
         <p>Il est actuellement <strong><span id="date-heure"></span></strong>.</p>
         <img src="https://hub.asimov.academy/wp-content/uploads/2024/10/hello-world.webp" alt="Hello World Image" class="img-fluid">
-        <button id="interactiveBtn" class="btn btn-primary mt-3">Cliquez-ici !</button>
+        <button id="redirectBtn" class="btn btn-primary mt-3">Cliquez-ici !</button>
     </div>
 
     <!-- Bootstrap JS and dependencies -->
@@ -137,6 +137,10 @@
 
         // Afficher l'heure immédiatement au chargement de la page
         mettreAJourDateHeure();
+
+        document.getElementById('redirectBtn').addEventListener('click', function() {
+            window.location.href = '/cloud';
+        });
     </script>
 </body>
 </html>
